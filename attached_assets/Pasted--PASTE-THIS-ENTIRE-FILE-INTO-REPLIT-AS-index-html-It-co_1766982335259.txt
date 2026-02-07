@@ -1,0 +1,672 @@
+<!--
+PASTE THIS ENTIRE FILE INTO REPLIT AS: index.html
+It contains:
+1) Flagship sales page copy
+2) Full module descriptions (professional sales language)
+3) Program Ethos & Ethics
+4) Legal-safe Disclaimer + Scope statement
+5) Founding Cohort Launch announcement section
+6) Simple CTAs + placeholder links for Stripe / application / email
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Applied Spiritual Counseling Practitioner Program | Awakened Miracles</title>
+  <meta name="description" content="A comprehensive training program for spiritually conscious individuals who want to responsibly support others through illness, trauma, and spiritual awakening—using grounded, ethical counseling tools." />
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --panel:#0f1620;
+      --panel2:#121c28;
+      --text:#e8eef7;
+      --muted:#b6c2d3;
+      --border:#203044;
+      --accent:#7bd7ff;
+      --accent2:#c6ff9a;
+      --warn:#ffd48a;
+      --danger:#ff9aa9;
+      --shadow: 0 8px 30px rgba(0,0,0,.35);
+      --radius: 18px;
+      --max: 1050px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 900px at 20% 0%, rgba(123,215,255,.10), transparent 55%),
+                  radial-gradient(900px 800px at 90% 10%, rgba(198,255,154,.08), transparent 55%),
+                  var(--bg);
+      color: var(--text);
+      line-height:1.55;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{
+      position:sticky; top:0; z-index:10;
+      backdrop-filter: blur(10px);
+      background: rgba(11,15,20,.70);
+      border-bottom:1px solid rgba(32,48,68,.65);
+    }
+    .nav{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:14px 20px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      font-weight:700; letter-spacing:.3px;
+    }
+    .dot{
+      width:10px;height:10px;border-radius:999px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow: 0 0 22px rgba(123,215,255,.35);
+    }
+    .navlinks{
+      display:flex; flex-wrap:wrap; gap:14px;
+      font-size:14px;
+      color:var(--muted);
+    }
+    .navlinks a{color:var(--muted)}
+    .navlinks a:hover{color:var(--text)}
+    .wrap{max-width:var(--max); margin:0 auto; padding:28px 20px 70px;}
+    .hero{
+      display:grid;
+      grid-template-columns: 1.3fr .9fr;
+      gap:18px;
+      align-items:start;
+      margin-top:18px;
+    }
+    @media (max-width: 900px){
+      .hero{grid-template-columns:1fr}
+      header{position:relative}
+    }
+    .card{
+      background: linear-gradient(180deg, rgba(18,28,40,.95), rgba(15,22,32,.95));
+      border:1px solid rgba(32,48,68,.8);
+      box-shadow: var(--shadow);
+      border-radius: var(--radius);
+      padding:22px;
+    }
+    .card h1{margin:0 0 10px; font-size:34px; line-height:1.12}
+    .sub{color:var(--muted); margin:0 0 16px; font-size:16px}
+    .pillrow{display:flex; flex-wrap:wrap; gap:10px; margin:14px 0 0}
+    .pill{
+      font-size:12px;
+      padding:7px 10px;
+      border-radius:999px;
+      border:1px solid rgba(32,48,68,.9);
+      background: rgba(11,15,20,.35);
+      color: var(--muted);
+    }
+    .ctaRow{display:flex; flex-wrap:wrap; gap:10px; margin-top:18px}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:11px 14px;
+      border-radius: 12px;
+      border:1px solid rgba(32,48,68,.9);
+      background: rgba(11,15,20,.45);
+      color: var(--text);
+      font-weight:600;
+      font-size:14px;
+      cursor:pointer;
+      transition: transform .05s ease, background .2s ease;
+    }
+    .btn:hover{background: rgba(18,28,40,.65); text-decoration:none}
+    .btn:active{transform: translateY(1px)}
+    .btn.primary{
+      background: linear-gradient(135deg, rgba(123,215,255,.18), rgba(198,255,154,.10));
+      border-color: rgba(123,215,255,.55);
+    }
+    .btn.primary:hover{background: linear-gradient(135deg, rgba(123,215,255,.24), rgba(198,255,154,.16))}
+    .btn.warn{
+      border-color: rgba(255,212,138,.55);
+      background: rgba(255,212,138,.08);
+    }
+    .grid2{display:grid; grid-template-columns:1fr 1fr; gap:14px}
+    @media (max-width: 900px){ .grid2{grid-template-columns:1fr} }
+    h2{margin:0 0 10px; font-size:22px}
+    h3{margin:0 0 8px; font-size:18px}
+    p{margin:0 0 12px}
+    ul{margin:0 0 12px; padding-left:18px}
+    li{margin:6px 0; color:var(--muted)}
+    .muted{color:var(--muted)}
+    .section{margin-top:18px}
+    .hr{height:1px; background: rgba(32,48,68,.8); margin:16px 0}
+    .tag{
+      display:inline-block;
+      font-size:12px;
+      padding:5px 9px;
+      border-radius:999px;
+      border:1px solid rgba(32,48,68,.85);
+      color: var(--muted);
+      margin-right:8px;
+      margin-bottom:8px;
+      background: rgba(11,15,20,.25);
+    }
+    .priceGrid{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:14px;
+      margin-top:10px;
+    }
+    @media (max-width: 980px){ .priceGrid{grid-template-columns:1fr} }
+    .priceCard{
+      background: rgba(11,15,20,.35);
+      border:1px solid rgba(32,48,68,.8);
+      border-radius: 16px;
+      padding:16px;
+    }
+    .priceTop{display:flex; justify-content:space-between; align-items:baseline; gap:10px; margin-bottom:10px}
+    .priceName{font-weight:700}
+    .priceAmt{font-weight:800; font-size:20px}
+    .note{
+      font-size:13px;
+      color: var(--muted);
+      border-left: 3px solid rgba(123,215,255,.55);
+      padding-left:10px;
+      margin-top:10px;
+    }
+    .callout{
+      border:1px solid rgba(123,215,255,.35);
+      background: rgba(123,215,255,.06);
+      border-radius: 16px;
+      padding:16px;
+    }
+    .callout strong{color:var(--text)}
+    .warnbox{
+      border:1px solid rgba(255,212,138,.45);
+      background: rgba(255,212,138,.06);
+      border-radius: 16px;
+      padding:16px;
+    }
+    .dangerbox{
+      border:1px solid rgba(255,154,169,.45);
+      background: rgba(255,154,169,.06);
+      border-radius: 16px;
+      padding:16px;
+    }
+    footer{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:22px 20px 40px;
+      color:var(--muted);
+      font-size:13px;
+      border-top:1px solid rgba(32,48,68,.65);
+    }
+    .small{font-size:13px}
+    .kicker{font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted)}
+    .stickyCTA{
+      position:fixed;
+      left:0; right:0; bottom:0;
+      background: rgba(11,15,20,.86);
+      border-top:1px solid rgba(32,48,68,.75);
+      backdrop-filter: blur(12px);
+      padding:10px 14px;
+      display:flex; justify-content:center;
+    }
+    .stickyCTA .inner{
+      width:min(var(--max), 100%);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand">
+        <span class="dot" aria-hidden="true"></span>
+        <span>Awakened Miracles</span>
+      </div>
+      <nav class="navlinks" aria-label="Site navigation">
+        <a href="#program">Program</a>
+        <a href="#modules">Modules</a>
+        <a href="#ethics">Ethics</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#cohort">Founding Cohort</a>
+        <a href="#disclaimer">Disclaimer</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- HERO -->
+    <section class="hero" id="program">
+      <div class="card">
+        <div class="kicker">Flagship Training Program</div>
+        <h1>Applied Spiritual Counseling Practitioner Program</h1>
+        <p class="sub">
+          Train as a grounded, ethical spiritual counselor—using structured tools you can actually apply.
+          This comprehensive training is designed for spiritually conscious individuals who feel called to support others
+          through illness, trauma, grief, and spiritual awakening in a responsible, professional way.
+        </p>
+
+        <div class="pillrow" aria-label="Program highlights">
+          <span class="pill">12-week structure</span>
+          <span class="pill">Ethics + boundaries</span>
+          <span class="pill">Trauma-informed orientation</span>
+          <span class="pill">Practical frameworks</span>
+          <span class="pill">Certificate of completion</span>
+        </div>
+
+        <div class="ctaRow">
+          <!-- TODO: Replace #stripe-guided with your actual Stripe checkout link -->
+          <a class="btn primary" href="#pricing">View Enrollment Options</a>
+          <!-- TODO: Replace mailto with your real email, if desired -->
+          <a class="btn" href="mailto:info@awakenedmiracles.life?subject=Applied%20Spiritual%20Counseling%20Program%20-%20Question">Ask a Question</a>
+          <a class="btn warn" href="#cohort">Founding Cohort Details</a>
+        </div>
+
+        <div class="hr"></div>
+
+        <div class="grid2">
+          <div>
+            <h2>This Program Is For You If</h2>
+            <ul>
+              <li>You feel called to support others spiritually, but you want structure—not guesswork.</li>
+              <li>You want ethical guidance, boundaries, and professional standards.</li>
+              <li>You have lived experience (illness, trauma, awakening) and want to translate it into responsible service.</li>
+              <li>You want practical counseling tools—clear language, session structure, and stabilization techniques.</li>
+              <li>You want to begin practicing with confidence (paid or unpaid), within an appropriate scope.</li>
+            </ul>
+          </div>
+          <div>
+            <h2>This Program Is Not</h2>
+            <ul>
+              <li>A replacement for licensed therapy or medical treatment.</li>
+              <li>A course that encourages unchecked intuition without discernment and safety practices.</li>
+              <li>A purely mystical exploration without professional application.</li>
+              <li>A guarantee of specific outcomes for clients (ethical practice emphasizes responsible process and appropriate referral).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="callout">
+          <strong>Outcome-focused promise:</strong>
+          <span class="muted">
+            By completion, you will be able to hold safe, grounded spiritual counseling sessions; apply ethical boundaries;
+            support clients navigating illness, grief, trauma, and awakening; and communicate clearly while staying within a responsible scope of practice.
+          </span>
+        </div>
+      </div>
+
+      <aside class="card">
+        <h2>What You Will Be Able to Do</h2>
+        <ul>
+          <li>Conduct grounded, client-centered spiritual counseling sessions.</li>
+          <li>Use structured frameworks instead of relying solely on intuition.</li>
+          <li>Recognize when a client needs referral to licensed professionals.</li>
+          <li>Support people through grief, illness, trauma responses, and awakening dynamics.</li>
+          <li>Practice with ethical boundaries, clarity, and stability.</li>
+        </ul>
+
+        <div class="hr"></div>
+
+        <h2>Format</h2>
+        <p class="muted small"><span class="tag">Duration</span> 12 weeks</p>
+        <p class="muted small"><span class="tag">Delivery</span> Pre-recorded core lessons + weekly guided support (cohort tier)</p>
+        <p class="muted small"><span class="tag">Certificate</span> Certificate of Completion (Foundational Practitioner Training)</p>
+
+        <div class="note">
+          Tip: If you are building toward professional practice, the guided cohort is recommended for accountability, structure,
+          and feedback.
+        </div>
+      </aside>
+    </section>
+
+    <!-- MODULES -->
+    <section class="section card" id="modules">
+      <h2>Program Modules (Professional Training)</h2>
+      <p class="muted">
+        These modules are designed to translate spiritual depth into professional competence, ethical practice, and responsible application.
+      </p>
+
+      <div class="hr"></div>
+
+      <article class="section">
+        <h3>Module 1: Psychic Professionalism – How to Give a Great Reading</h3>
+        <p class="muted">
+          This foundational module establishes professional standards for intuitive and spiritual counseling work. Students learn how to deliver clear,
+          ethical, and grounded readings while maintaining appropriate boundaries and client safety. Emphasis is placed on discernment, responsibility,
+          and avoiding projection or dependency.
+        </p>
+        <p class="small"><strong>Key outcomes:</strong> Conduct responsible readings; maintain ethical/energetic boundaries; communicate insights without causing harm.</p>
+      </article>
+
+      <article class="section">
+        <h3>Module 2: Consciousness and YOU</h3>
+        <p class="muted">
+          Develop practitioner self-awareness by exploring states of consciousness and the role of the counselor as observer rather than authority.
+          Learn how beliefs, emotional states, and unconscious material influence sessions—and how to remain grounded, present, and neutral while supporting others.
+        </p>
+        <p class="small"><strong>Key outcomes:</strong> Increased self-regulation; reduced projection; stronger presence and professional grounding.</p>
+      </article>
+
+      <article class="section">
+        <h3>Module 3: Channeling (Discernment & Responsible Application)</h3>
+        <p class="muted">
+          Channeling is approached through discernment, ethics, and accountability. This module teaches how to evaluate intuitive information,
+          communicate responsibly, and recognize when channeling is appropriate—or when it is not—so sessions remain grounded and safe.
+        </p>
+        <p class="small"><strong>Key outcomes:</strong> Ethical use of intuitive info; discernment between insight and imagination; safe communication practices.</p>
+      </article>
+
+      <article class="section">
+        <h3>Module 4: Shamanism (Symbolic Healing Frameworks)</h3>
+        <p class="muted">
+          Explore shamanic principles as symbolic frameworks rather than role adoption. Learn how to responsibly apply concepts without cultural misuse,
+          spiritual inflation, or mythologizing—keeping the focus on grounded counseling value.
+        </p>
+        <p class="small"><strong>Key outcomes:</strong> Ethical use of symbolic models; clear boundaries around spiritual roles; practical application.</p>
+      </article>
+
+      <article class="section">
+        <h3>Module 5: Soul Encounters (Grief, Loss, and Spiritual Experience)</h3>
+        <p class="muted">
+          Learn how to support individuals reporting spiritual experiences around grief, loss, or perceived contact. Focus is placed on emotional containment,
+          meaning-making, and psychological safety—without reinforcing interpretations that may destabilize clients.
+        </p>
+        <p class="small"><strong>Key outcomes:</strong> Support grief-related phenomena safely; hold space without reinforcing delusion; facilitate integration.</p>
+      </article>
+
+      <article class="section">
+        <h3>Module 6: Counseling Stabilization & Safety Tools (Heads Up Tools)</h3>
+        <p class="muted">
+          Practical tools for grounding, stabilization, and emotional regulation during sessions. Learn how to respond when clients become overwhelmed,
+          dysregulated, or dissociated—so your work remains contained, safe, and professionally responsible.
+        </p>
+        <p class="small"><strong>Key outcomes:</strong> De-escalation methods; session stabilization strategies; increased client safety and trust.</p>
+      </article>
+
+      <article class="section">
+        <h3>Module 7: Dream Play (Therapeutic Dream Integration)</h3>
+        <p class="muted">
+          Work with dreams as symbolic material rather than predictive authority. Learn client-led exploration methods, how to avoid suggestibility,
+          and how to support integration without imposing interpretation.
+        </p>
+        <p class="small"><strong>Key outcomes:</strong> Facilitate safe dream exploration; avoid projection/suggestion; use dreams as integration tools.</p>
+      </article>
+
+      <article class="section">
+        <h3>Module 8: Meditation and Prayer (Grounded Spiritual Practices)</h3>
+        <p class="muted">
+          Learn non-dogmatic meditation and prayer practices that support nervous system regulation, clarity, and grounding. Students learn how to guide
+          stabilizing practices and adapt them to individual needs—avoiding spiritual bypassing.
+        </p>
+        <p class="small"><strong>Key outcomes:</strong> Guide safe grounding practices; support regulation; avoid bypassing and destabilizing approaches.</p>
+      </article>
+
+      <article class="section">
+        <h3>Module 9: Mental Telepathy (Intuitive Empathy & Boundaries)</h3>
+        <p class="muted">
+          “Telepathy” is reframed as intuitive empathy and heightened perception—handled with ethical boundaries. Learn how to avoid mind-reading assumptions,
+          reduce misinterpretation, and communicate with precision without reinforcing dependency.
+        </p>
+        <p class="small"><strong>Key outcomes:</strong> Distinguish intuition from projection; maintain ethical communication boundaries; reduce overreach.</p>
+      </article>
+
+      <article class="section">
+        <h3>Module 10: Time Travel (Symbolic Timeline & Trauma-Informed Work)</h3>
+        <p class="muted">
+          Time-based experiences are approached as symbolic narrative processes. Learn to work with memory and personal timelines responsibly—without
+          false-memory creation—using grounding, consent, and trauma-informed framing.
+        </p>
+        <p class="small"><strong>Key outcomes:</strong> Support timeline exploration safely; avoid false-memory risk; facilitate trauma-informed integration.</p>
+      </article>
+
+      <article class="section">
+        <h3>Module 11: Out of Body Journeys (Altered States & Integration)</h3>
+        <p class="muted">
+          Learn to support clients reporting altered-state experiences while prioritizing grounding and reintegration. This module emphasizes recognizing
+          dissociation indicators, maintaining containment, and knowing when referral is appropriate.
+        </p>
+        <p class="small"><strong>Key outcomes:</strong> Identify dissociation vs spiritual experience; support reintegration; apply appropriate referral decisions.</p>
+      </article>
+
+      <article class="section">
+        <h3>Module 12: Integration & Readiness to Practice</h3>
+        <p class="muted">
+          The capstone module focuses on integration, ethical readiness, and professional self-assessment. Students review case studies, clarify scope of practice,
+          and develop a grounded framework for responsible real-world application.
+        </p>
+        <p class="small"><strong>Key outcomes:</strong> Assess readiness; clarify ethical scope/limits; receive Certificate of Completion.</p>
+      </article>
+    </section>
+
+    <!-- ETHOS & ETHICS -->
+    <section class="section card" id="ethics">
+      <h2>Program Ethos & Ethics</h2>
+      <p class="muted">
+        Awakened Miracles is committed to responsible spiritual counseling education. This program prioritizes client safety, ethical boundaries, and professional integrity.
+      </p>
+
+      <div class="grid2">
+        <div class="callout">
+          <h3>Ethical Standards</h3>
+          <ul>
+            <li>Client welfare and psychological safety come first.</li>
+            <li>Clear boundaries and informed consent are required.</li>
+            <li>Students learn how to avoid projection, suggestion, and dependency dynamics.</li>
+            <li>We teach discernment: knowing when to slow down, stabilize, or refer out.</li>
+          </ul>
+        </div>
+
+        <div class="warnbox">
+          <h3>Responsible Scope</h3>
+          <ul>
+            <li>Spiritual counseling is not a substitute for therapy or medical care.</li>
+            <li>We do not diagnose, treat, or cure medical or mental health conditions.</li>
+            <li>We emphasize collaboration and referral to licensed professionals when appropriate.</li>
+            <li>We teach grounded application, not sensationalism.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="note">
+        This ethos protects students, clients, and the long-term credibility of your practice.
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section card" id="pricing">
+      <h2>Enrollment Options</h2>
+      <p class="muted">
+        Choose the level of support that fits your goals. The guided cohort is recommended for students who want structure, accountability, and guided integration.
+      </p>
+
+      <div class="priceGrid">
+        <div class="priceCard">
+          <div class="priceTop">
+            <div class="priceName">Self-Paced Program</div>
+            <div class="priceAmt">$597</div>
+          </div>
+          <ul>
+            <li>Full program access</li>
+            <li>All modules + tools</li>
+            <li>Certificate of Completion</li>
+            <li>Best for independent learners</li>
+          </ul>
+          <!-- TODO: Replace link with your Stripe checkout -->
+          <a class="btn primary" href="#stripe-self">Enroll (Self-Paced)</a>
+          <p class="muted small" style="margin-top:8px">Replace <code>#stripe-self</code> with your Stripe link.</p>
+        </div>
+
+        <div class="priceCard">
+          <div class="priceTop">
+            <div class="priceName">Guided Cohort (Recommended)</div>
+            <div class="priceAmt">$1,497</div>
+          </div>
+          <ul>
+            <li>Everything in Self-Paced</li>
+            <li>Weekly guided support (live or recorded)</li>
+            <li>Community accountability</li>
+            <li>Structured progression</li>
+          </ul>
+          <!-- TODO: Replace link with your Stripe checkout -->
+          <a class="btn primary" href="#stripe-guided">Enroll (Guided Cohort)</a>
+          <p class="muted small" style="margin-top:8px">Replace <code>#stripe-guided</code> with your Stripe link.</p>
+        </div>
+
+        <div class="priceCard">
+          <div class="priceTop">
+            <div class="priceName">Mentorship Add-On</div>
+            <div class="priceAmt">$2,997</div>
+          </div>
+          <ul>
+            <li>Everything in Guided Cohort</li>
+            <li>Small-group or 1:1 supervision</li>
+            <li>Case review and readiness support</li>
+            <li>Best for aspiring practitioners</li>
+          </ul>
+          <!-- TODO: Replace link with your application form OR Stripe -->
+          <a class="btn primary" href="#apply-mentorship">Apply for Mentorship</a>
+          <p class="muted small" style="margin-top:8px">Replace <code>#apply-mentorship</code> with your application link.</p>
+        </div>
+      </div>
+
+      <div class="hr"></div>
+
+      <div class="dangerbox">
+        <h3>Professional note on pricing</h3>
+        <p class="muted">
+          If you plan to train practitioners, pricing should reflect responsibility and seriousness. Underpricing reduces trust and follow-through.
+          These tiers support commitment and sustainable delivery.
+        </p>
+      </div>
+    </section>
+
+    <!-- FOUNDING COHORT -->
+    <section class="section card" id="cohort">
+      <h2>Founding Cohort (Limited Seats)</h2>
+      <p class="muted">
+        The Founding Cohort is the fastest, most effective way to launch this program with real students, real feedback, and real income—without overbuilding.
+        Founding students receive early access, direct guidance, and founding pricing.
+      </p>
+
+      <div class="grid2">
+        <div class="callout">
+          <h3>What Founding Students Receive</h3>
+          <ul>
+            <li>Guided cohort access</li>
+            <li>Weekly guidance sessions (live or recorded)</li>
+            <li>Direct integration support</li>
+            <li>Founding cohort recognition</li>
+            <li>Early access to updates and improvements</li>
+          </ul>
+        </div>
+
+        <div class="warnbox">
+          <h3>Founding Cohort Pricing</h3>
+          <p class="muted">
+            Recommended founding price (limited time): <strong>$997</strong> for the Guided Cohort tier.
+          </p>
+          <p class="muted small">
+            Use this to validate demand, collect testimonials, and refine. After the founding cohort, return to standard pricing.
+          </p>
+          <!-- TODO: Replace link with Stripe checkout -->
+          <a class="btn warn" href="#stripe-founding">Enroll at Founding Price</a>
+          <p class="muted small" style="margin-top:8px">Replace <code>#stripe-founding</code> with your Stripe link.</p>
+        </div>
+      </div>
+
+      <div class="hr"></div>
+
+      <h3>Founding Cohort Announcement (Copy You Can Reuse)</h3>
+      <p class="muted">
+        <strong>Announcing the Founding Cohort:</strong> The Applied Spiritual Counseling Practitioner Program is now open for a limited founding cohort.
+        This is a structured training for spiritually conscious individuals who feel called to support others through illness, trauma, grief, and awakening
+        using grounded, ethical counseling tools.
+      </p>
+      <p class="muted">
+        If you want real structure, professional standards, and practical frameworks you can apply responsibly, this cohort is designed for you.
+        Seats are limited to protect quality and student support.
+      </p>
+      <p class="muted small">
+        Questions? Email: <a href="mailto:info@awakenedmiracles.life?subject=Founding%20Cohort%20Question">info@awakenedmiracles.life</a>
+      </p>
+    </section>
+
+    <!-- DISCLAIMER -->
+    <section class="section card" id="disclaimer">
+      <h2>Disclaimer & Scope of Practice</h2>
+      <p class="muted">
+        This statement is designed to be clear, ethical, and legally safer for spiritual counseling education.
+        You may also place this in your footer or checkout page.
+      </p>
+
+      <div class="dangerbox">
+        <h3>Educational Use Only</h3>
+        <p class="muted">
+          Awakened Miracles provides educational content for personal and professional development. This program does not provide medical,
+          psychological, psychiatric, or therapeutic diagnosis or treatment. Participation in this training does not create a therapist-client
+          relationship, and the certificate offered is a certificate of completion for training—not a state or government licensure.
+        </p>
+
+        <h3>Not Medical or Mental Health Care</h3>
+        <p class="muted">
+          Spiritual counseling and intuitive practices are not a substitute for licensed medical care, psychotherapy, psychiatric services,
+          or crisis support. If you are experiencing a medical or mental health emergency, seek immediate assistance from local emergency services
+          or a licensed professional.
+        </p>
+
+        <h3>Appropriate Referral</h3>
+        <p class="muted">
+          Students are taught to recognize situations requiring referral to licensed professionals. Ethical practice includes staying within scope,
+          obtaining informed consent, and prioritizing client welfare at all times.
+        </p>
+
+        <p class="muted small">
+          By enrolling, students agree to use the material responsibly and to maintain appropriate professional boundaries in all client-facing settings.
+        </p>
+      </div>
+
+      <div class="hr"></div>
+
+      <p class="muted small">
+        Founded by Kathy Kenedi | CEO: Dustin Read<br />
+        &copy; <span id="year"></span> Awakened Miracles. All rights reserved.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <strong>Implementation Notes (for you):</strong>
+      <ul>
+        <li>Replace <code>#stripe-self</code>, <code>#stripe-guided</code>, and <code>#stripe-founding</code> with your Stripe checkout links.</li>
+        <li>If you use an application form, replace <code>#apply-mentorship</code> with your form URL (Google Form, Typeform, etc.).</li>
+        <li>If your site uses a router or templates, copy each section into the appropriate page (or keep as a single landing page).</li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Sticky CTA (optional, but improves conversions) -->
+  <div class="stickyCTA" role="region" aria-label="Enrollment call to action">
+    <div class="inner">
+      <div class="muted small">
+        Ready to train as a grounded, ethical spiritual counselor?
+      </div>
+      <div style="display:flex; gap:10px; flex-wrap:wrap">
+        <a class="btn primary" href="#pricing">Enroll Now</a>
+        <a class="btn" href="mailto:info@awakenedmiracles.life?subject=Program%20Question">Ask a Question</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Set current year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
