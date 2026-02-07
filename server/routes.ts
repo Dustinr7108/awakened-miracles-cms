@@ -3,24 +3,21 @@ import { createServer, type Server } from "http";
 import Stripe from "stripe";
 import { storage } from "./storage";
 import { setupAuth, isAuthenticated } from "./replitAuth";
-import { registerObjectStorageRoutes } from "./replit_integrations/object_storage";
+// import { registerObjectStorageRoutes } from "./replit_integrations/object_storage";
 import { insertCourseSchema, insertEnrollmentSchema, insertLessonProgressSchema } from "@shared/schema";
 import { z } from "zod";
 
-if (!process.env.STRIPE_SECRET_KEY) {
-  throw new Error('Missing required Stripe secret: STRIPE_SECRET_KEY');
-}
+// Stripe is optional - payments won't work without it
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
+const stripe = process.env.STRIPE_SECRET_KEY ? new Stripe(process.env.STRIPE_SECRET_KEY, {
   apiVersion: "2025-08-27.basil",
-});
+}) : null;
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Auth middleware
   await setupAuth(app);
   
-  // Object storage routes for video uploads
-  registerObjectStorageRoutes(app);
+  // Object storage routes disabled (not using Replit storage)
 
   // Auth routes
   app.get('/api/auth/user', isAuthenticated, async (req: any, res) => {
